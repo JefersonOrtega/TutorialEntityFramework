@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200613001500_CreateEscuelaDB.cs" />
+    <Compile Remove="Migrations\20200613001500_CreateEscuelaDB.Designer.cs" />
+    <Compile Remove="Migrations\20200613001829_CrearEscuelaDB.cs" />
+    <Compile Remove="Migrations\20200613001829_CrearEscuelaDB.Designer.cs" />
+    <Compile Remove="Migrations\20200613011557_CrearEscuelaDB.cs" />
+    <Compile Remove="Migrations\20200613011557_CrearEscuelaDB.Designer.cs" />
+    <Compile Remove="Migrations\20200613014954_ActualizarEscuelaDB.cs" />
+    <Compile Remove="Migrations\20200613014954_ActualizarEscuelaDB.Designer.cs" />
+    <Compile Remove="Migrations\20200613033238_Actualizar2EscuelaDB.cs" />
+    <Compile Remove="Migrations\20200613033238_Actualizar2EscuelaDB.Designer.cs" />
+    <Compile Remove="Migrations\20200613034416_ActualizarEscuelaDB.cs" />
+    <Compile Remove="Migrations\20200613034416_ActualizarEscuelaDB.Designer.cs" />
+    <Compile Remove="Migrations\20200613040255_CrearEscuelaDB.cs" />
+    <Compile Remove="Migrations\20200613040255_CrearEscuelaDB.Designer.cs" />
+    <Compile Remove="Migrations\20200613040802_EscuelaDB.cs" />
+    <Compile Remove="Migrations\20200613040802_EscuelaDB.Designer.cs" />
+    <Compile Remove="Migrations\20200613041052_CrearEscuelaDB.cs" />
+    <Compile Remove="Migrations\20200613041052_CrearEscuelaDB.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
