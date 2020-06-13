@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Console;
 using System;
 using System.Linq;
 using TutorialEntityFramework.DAL;
@@ -38,9 +40,11 @@ namespace TutorialEntityFramework
             contexto.Estudiantes.Remove(std);
             contexto.SaveChanges();*/
 
-            var estudiantes = contexto.Estudiantes
+            /*var estudiantes = contexto.Estudiantes
                 .FromSql($"Select * from Estudiantes where PPrimerNombre = '{0}'", nombre)
-                .ToList();
+                .ToList();*/
+
+            
         }
 
         public static string GetName()

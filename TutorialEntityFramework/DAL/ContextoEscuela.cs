@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Console;
 using System;
 using System.Collections.Generic;
 using System.Reflection.Metadata.Ecma335;
@@ -16,6 +18,7 @@ namespace TutorialEntityFramework.DAL
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Server=.\SQLEXPRESS;Database=EscuelaDB; Trusted_Connection=True;");
+            
         }
 
         /*protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -42,5 +45,8 @@ namespace TutorialEntityFramework.DAL
             //Para Relacion varios a varios
             //modelBuilder.Entity<EstudianteCurso>().HasKey(ec => new { ec.EstudianteID, ec.CursoId });
         }*/
+
+       
+       
     }
 }
