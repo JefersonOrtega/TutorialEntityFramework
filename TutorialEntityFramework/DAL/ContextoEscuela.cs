@@ -18,7 +18,7 @@ namespace TutorialEntityFramework.DAL
             optionsBuilder.UseSqlServer(@"Server=.\SQLEXPRESS;Database=EscuelaDB; Trusted_Connection=True;");
         }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        /*protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Estudiante>()
                 .Property(e => e.EstudianteId)
@@ -27,7 +27,7 @@ namespace TutorialEntityFramework.DAL
                 .IsRequired();
 
             //Relacion de uno a Varios
-            /*modelBuilder.Entity<Estudiante>()
+            modelBuilder.Entity<Estudiante>()
                 .HasOne<Grado>(e => e.Grado)
                 .WithMany(g => g.Estudiantes) //WithOne si se quiere relacion de 1 a 1
                 .HasForeignKey(e => e.GradoId);
@@ -37,10 +37,10 @@ namespace TutorialEntityFramework.DAL
                 .HasMany<Estudiante>(g => g.Estudiantes)
                 .WithOne(e => e.Grado)
                 .HasForeignKey(e => e.GradoId)
-                .OnDelete(DeleteBehavior.Cascade);//ClientNull si lo que se quiere es que en la otra tabla se ponga valor nulo*/
+                .OnDelete(DeleteBehavior.Cascade);//ClientNull si lo que se quiere es que en la otra tabla se ponga valor nulo
 
             //Para Relacion varios a varios
             //modelBuilder.Entity<EstudianteCurso>().HasKey(ec => new { ec.EstudianteID, ec.CursoId });
-        }
+        }*/
     }
 }

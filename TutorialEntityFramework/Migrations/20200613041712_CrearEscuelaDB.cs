@@ -25,7 +25,8 @@ namespace TutorialEntityFramework.Migrations
                 name: "Estudiantes",
                 columns: table => new
                 {
-                    id = table.Column<int>(nullable: false, defaultValue: 0),
+                    EstudianteId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     PrimerNombre = table.Column<string>(nullable: true),
                     Apellido = table.Column<string>(nullable: true),
                     FechaCumpleano = table.Column<DateTime>(nullable: false),
@@ -33,7 +34,7 @@ namespace TutorialEntityFramework.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Estudiantes", x => x.id);
+                    table.PrimaryKey("PK_Estudiantes", x => x.EstudianteId);
                 });
 
             migrationBuilder.CreateTable(

@@ -10,7 +10,7 @@ using TutorialEntityFramework.DAL;
 namespace TutorialEntityFramework.Migrations
 {
     [DbContext(typeof(ContextoEscuela))]
-    [Migration("20200613041334_CrearEscuelaDB")]
+    [Migration("20200613041712_CrearEscuelaDB")]
     partial class CrearEscuelaDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -43,9 +43,8 @@ namespace TutorialEntityFramework.Migrations
                 {
                     b.Property<int>("EstudianteId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnName("id")
                         .HasColumnType("int")
-                        .HasDefaultValue(0);
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Apellido")
                         .HasColumnType("nvarchar(max)");

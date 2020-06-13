@@ -24,6 +24,8 @@
     <Compile Remove="Migrations\20200613040802_EscuelaDB.Designer.cs" />
     <Compile Remove="Migrations\20200613041052_CrearEscuelaDB.cs" />
     <Compile Remove="Migrations\20200613041052_CrearEscuelaDB.Designer.cs" />
+    <Compile Remove="Migrations\20200613041334_CrearEscuelaDB.cs" />
+    <Compile Remove="Migrations\20200613041334_CrearEscuelaDB.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

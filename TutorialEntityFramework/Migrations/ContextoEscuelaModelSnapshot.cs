@@ -41,9 +41,8 @@ namespace TutorialEntityFramework.Migrations
                 {
                     b.Property<int>("EstudianteId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnName("id")
                         .HasColumnType("int")
-                        .HasDefaultValue(0);
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Apellido")
                         .HasColumnType("nvarchar(max)");
