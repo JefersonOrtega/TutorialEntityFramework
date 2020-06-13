@@ -10,6 +10,6 @@ namespace TutorialEntityFramework.Entidades
         public int GradoId { get; set; }
         public string NombreGrado { get; set; }
         public string seleccion { get; set; }
-       // public IList<Estudiante> Estudiantes { get; set; }
+        public IList<Estudiante> Estudiantes { get; set; }
     }
 }

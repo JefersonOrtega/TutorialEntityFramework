@@ -11,7 +11,7 @@ namespace TutorialEntityFramework.Entidades
         public string NombreCurso { get; set; }
         public string Descripcion { get; set; }
 
-        //public IList<EstudianteCurso> EstudianteCursos { get; set; }
+        public IList<EstudianteCurso> EstudianteCursos { get; set; }
 
     }
 }

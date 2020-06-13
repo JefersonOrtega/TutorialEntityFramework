@@ -15,10 +15,10 @@ namespace TutorialEntityFramework.Entidades
         public DateTime FechaCumpleano { get; set; }
         public byte[] Photo { get; set; }
 
-        /*public int GradoId { get; set; }
+        public int GradoId { get; set; }
         public Grado Grado { get; set; }
-        */
-       // public IList<EstudianteCurso> EstudianteCursos { get; set; }
+        
+        public IList<EstudianteCurso> EstudianteCursos { get; set; }
 
     }
 }

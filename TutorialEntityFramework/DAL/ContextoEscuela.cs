@@ -21,7 +21,7 @@ namespace TutorialEntityFramework.DAL
             
         }
 
-        /*protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Estudiante>()
                 .Property(e => e.EstudianteId)
@@ -43,8 +43,8 @@ namespace TutorialEntityFramework.DAL
                 .OnDelete(DeleteBehavior.Cascade);//ClientNull si lo que se quiere es que en la otra tabla se ponga valor nulo
 
             //Para Relacion varios a varios
-            //modelBuilder.Entity<EstudianteCurso>().HasKey(ec => new { ec.EstudianteID, ec.CursoId });
-        }*/
+            modelBuilder.Entity<EstudianteCurso>().HasKey(ec => new { ec.EstudianteID, ec.CursoId });
+        }
 
        
        
